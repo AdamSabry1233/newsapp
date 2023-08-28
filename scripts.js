@@ -1,5 +1,6 @@
 const apiKey = process.env.NEWS_API_KEY;
-const url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`;
+const proxyUrl = 'https://adamsabry1233.github.io/newsapp/'; // Replace with your proxy server URL
+let currentUrl = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`;
 
 document.addEventListener('DOMContentLoaded', () => {
     fetchNews();
